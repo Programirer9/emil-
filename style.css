@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #ffffff;
+  color: #111;
+  transition: 0.4s;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h2 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+/* Glass Effekt */
+.glass {
+  margin: 40px;
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  background: rgba(255,255,255,0.6);
+}
+
+/* Grid Layout */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 15px;
+  background: #f5f5f5;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+}
+
+/* Projekt */
+.project-card {
+  margin: 20px auto;
+  padding: 30px;
+  width: 250px;
+  border-radius: 20px;
+  background: #f5f5f5;
+}
+
+/* Animation */
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Dark Mode */
+.dark {
+  background: #0d0d0d;
+  color: white;
+}
+
+.dark .card,
+.dark .project-card {
+  background: #1a1a1a;
+}
+
+.dark .glass {
+  background: rgba(30,30,30,0.6);
+}
